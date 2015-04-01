@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 MAINTAINER ian.miell@gmail.com
 
 # Let's start with some basic stuff.
-RUN apt-get update -qq && apt-get install -qqy git wget curl build-essential docker.io
+RUN apt-get update -qq && apt-get install -qqy git wget curl build-essential docker.io net-tools telnet
     
 # Install kubernetes and golang
 RUN mkdir -p /repos
